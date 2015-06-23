@@ -31,7 +31,8 @@
                 }
 
                 $timeout(function () {
-                    var imageList = $($scope.ngSrcLazyLoadSelector)
+                    var imageList = $(element).find($scope.ngSrcLazyLoadSelector);
+
                     if (imageList.length) {
                         imageList.lazyload(options);
 
