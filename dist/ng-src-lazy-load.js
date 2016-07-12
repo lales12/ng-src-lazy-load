@@ -19,7 +19,7 @@
                 }
 
                 if ($scope.ngSrcLazyLoadThreshold) {
-                    options.threshold = $scope.ngSrcLazyLoadThreshold;
+                    options.threshold = parseInt($scope.ngSrcLazyLoadThreshold);
                 }
 
                 if ($scope.ngSrcLazyLoadEvent) {
